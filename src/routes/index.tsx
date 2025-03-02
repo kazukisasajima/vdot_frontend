@@ -9,6 +9,9 @@ import Dashboard from "../pages/Dashboard";
 import Profile from "../pages/Profile";
 import ProtectedRoute from "./ProtectedRoute";
 import ChangePassword from "../pages/auth/ChangePassword";
+import VdotTraining from "../pages/vdot/VdotTraining";
+import VdotFormula from "../pages/vdot/VdotFormula";
+import VdotEquivalent from "../pages/vdot/VdotEquivalent";
 
 const AppRoutes = () => {
   return (
@@ -25,6 +28,9 @@ const AppRoutes = () => {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/change-password" element={<ChangePassword />} />
+          <Route path="/vdot-training" element={<VdotTraining />} />
+          <Route path="/vdot-formula" element={<VdotFormula />} />
+          <Route path="/vdot-equivalent" element={<VdotEquivalent />} />
         </Route>
       </Routes>
     </BrowserRouter>
